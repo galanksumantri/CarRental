@@ -1,0 +1,39 @@
+{
+  "data": [
+    {
+      "id": 1,
+      "briefCase": 2,
+      "user": 4,
+      "name": "Daihatsu Xenia",
+      "harga": "Rp 230.000"
+    },
+    {
+      "id": 2,
+      "briefCase": 2,
+      "user": 4,
+      "name": "Daihatsu Xenia",
+      "harga": "Rp 230.000"
+    },
+    {
+      "id": 3,
+      "briefCase": 2,
+      "user": 4,
+      "name": "Daihatsu Xenia",
+      "harga": "Rp 230.000"
+    },
+    {
+      "id": 4,
+      "briefCase": 2,
+      "user": 4,
+      "name": "Daihatsu Xenia",
+      "harga": "Rp 230.000"
+    },
+    {
+      "id": 5,
+      "briefCase": 2,
+      "user": 4,
+      "name": "Daihatsu Xenia",
+      "harga": "Rp 230.000"
+    }
+  ]
+}
