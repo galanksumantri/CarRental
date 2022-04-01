@@ -66,3 +66,5 @@ const Router = () => {
 export default Router
 
 const styles = StyleSheet.create({})
+
+// export default Router
