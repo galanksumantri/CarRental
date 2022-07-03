@@ -2,7 +2,7 @@ const mainColors = {
   blue1: '#091B6F',
   blue2: '#D3D9FD',
   green1: '#5CB85F',
-  green2: '#5CB85F',
+  green2: '#DEF1DF',
   grey1: '#E9E9E9',
   grey2: '#D3D9FD',
 };

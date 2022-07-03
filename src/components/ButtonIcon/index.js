@@ -31,7 +31,6 @@ const styles = StyleSheet.create({
     alignSelf: 'center',
     borderRadius: 8,
   },
-
   text: {
     fontSize: 12,
     fontFamily: fonts.primary[400],

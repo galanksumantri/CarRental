@@ -2,7 +2,7 @@ import React from 'react';
 import {StyleSheet, Text, View} from 'react-native';
 import {colors, fonts} from '../../utils';
 
-export default function Header({title}) {
+export default function HeaderTitle({title}) {
   return (
     <View>
       <View style={styles.titleWrapper}>

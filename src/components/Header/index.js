@@ -1,3 +1,3 @@
-import Header from "./Title";
+import Header from "./HeaderTitle";
 
 export {Header}
