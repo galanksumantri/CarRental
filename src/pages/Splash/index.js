@@ -1,8 +1,9 @@
 import { StyleSheet, Text, View, Image } from 'react-native'
 import React, { useEffect } from 'react'
 import { Logo } from '../../assets'
+import {colors, fonts} from '../../utils'
 
-const Splash = ({ navigation }) => {
+export default function Splash({ navigation }) {
 
   useEffect(() => {
     setTimeout( () => {
@@ -18,35 +19,32 @@ const Splash = ({ navigation }) => {
           <Text style={styles.text}>Binar Car Rental</Text>
         </View>
       </View>
-      <Image source={Logo} style={styles.logo} />
+      <Image resizeMode='cover' source={Logo} style={styles.logo} />
     </View>
   )
 }
 
-export default Splash
-
 const styles = StyleSheet.create({
   backround: {
-    backgroundColor: '#091B6F',
+    backgroundColor: colors.background,
     flex: 1
   },
   logo: {
-    flex: 1,
-    flexDirection: 'column-reverse',
-    alignItems: 'stretch',
-    width: '100%'
+    width: '100%', 
+    height: 200,
   },
   text: {
     textAlign: 'center',
-    color: '#fff',
+    color: colors.white,
     fontSize: 24,
-    fontFamily: 'Helvetica' 
+    fontFamily: fonts.primary[400],
+    fontWeight: '700',
   },
   content: {
     flex: 2,
     justifyContent: 'flex-end',
   },
   container: {
-    paddingBottom: '30%'
+    paddingBottom: '50%'
   }
 })
