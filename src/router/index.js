@@ -1,7 +1,7 @@
 import { StyleSheet, Text, View } from 'react-native';
 import React from 'react';
 import { createNativeStackNavigator } from '@react-navigation/native-stack';
-import { BottomTabBar, createBottomTabNavigator } from '@react-navigation/bottom-tabs';
+import { createBottomTabNavigator } from '@react-navigation/bottom-tabs';
 import Icon from 'react-native-vector-icons/Feather';
 import { Home, Akun, DaftarMobil, Splash } from '../pages';
 import { BottomNavigator } from '../components/';
@@ -9,7 +9,7 @@ import { BottomNavigator } from '../components/';
 const Stack = createNativeStackNavigator()
 const Tab = createBottomTabNavigator();
 
-const MainApp = () => {
+export default function MainApp() {
   return (
     <Tab.Navigator
       tabBar={props => <BottomNavigator {...props} />}
@@ -62,9 +62,3 @@ const Router = () => {
     </Stack.Navigator>
   )
 }
-
-export default Router
-
-const styles = StyleSheet.create({})
-
-// export default Router
