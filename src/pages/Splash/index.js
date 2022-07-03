@@ -1,4 +1,4 @@
-import { StyleSheet, Text, View, Image } from 'react-native'
+import { StyleSheet, Text, View, Image, StatusBar } from 'react-native'
 import React, { useEffect } from 'react'
 import { Logo } from '../../assets'
 import {colors, fonts} from '../../utils'
@@ -13,6 +13,9 @@ export default function Splash({ navigation }) {
 
   return (
     <View style={styles.backround}>
+      <StatusBar
+        barStyle="light-content"
+        backgroundColor={colors.background} />
       <View style={styles.content}>
         <View style={styles.container}>
           <Text style={styles.text}>BCR</Text>
