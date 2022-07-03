@@ -1,11 +1,9 @@
 import { ScrollView, View, Text, StyleSheet, Image, ImageBackground } from 'react-native'
 import React from 'react'
 import { Logo2, JSONCarList, JSONCategoryList, } from '../../assets'
-import Card from '../../components/Card'
-import {ButtonIcon, List, Header} from '../../components'
-import useWindowDimensions from 'react-native/Libraries/Utilities/useWindowDimensions'
+import {ButtonIcon, List, Header, Card} from '../../components'
 
-const Home = () => {
+export default function Home() {
   return (
     <ScrollView showsVerticalScrollIndicator={false}>
       <View>
@@ -59,8 +57,6 @@ const Home = () => {
     </ScrollView>
   )
 }
-
-export default Home
 
 const styles = StyleSheet.create({
   // container: {

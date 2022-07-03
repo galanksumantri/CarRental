@@ -1,6 +1,6 @@
 import React from 'react';
 import {Image, StyleSheet, Text, TouchableOpacity, View} from 'react-native';
-import {IcBriefcase, IcUsers} from '../../assets';
+// import {IcBriefcase, IcUsers} from '../../assets';
 import {colors, fonts} from '../../utils';
 
 const List = ({name, harga, user, briefCase, source}) => {
@@ -11,9 +11,9 @@ const List = ({name, harga, user, briefCase, source}) => {
         <View>
           <Text style={styles.mobil}>{name}</Text>
           <View style={styles.icon}>
-            <IcUsers style={{marginRight: 4}} />
+            {/* <IcUsers style={{marginRight: 4}} /> */}
             <Text style={styles.text}>{user}</Text>
-            <IcBriefcase style={{marginRight: 4}} />
+            {/* <IcBriefcase style={{marginRight: 4}} /> */}
             <Text style={styles.text}>{briefCase}</Text>
           </View>
           <Text style={styles.harga}>{harga}</Text>
