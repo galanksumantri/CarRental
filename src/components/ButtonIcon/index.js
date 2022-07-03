@@ -3,7 +3,7 @@ import {StyleSheet, Text, TouchableOpacity, View} from 'react-native';
 import {IcOlehOleh, IcPenginapan, IcSewaMobil, IcWisata} from '../../assets';
 import {colors, fonts} from '../../utils';
 
-const ButtonIcon = ({title}) => {
+export default function ButtonIcon({title}) {
   const Icon = () => {
     if (title === 'Sewa Mobil') return <IcSewaMobil />;
     if (title === 'Oleh-Oleh') return <IcOlehOleh />;
@@ -21,8 +21,6 @@ const ButtonIcon = ({title}) => {
     </TouchableOpacity>
   );
 };
-
-export default ButtonIcon;
 
 const styles = StyleSheet.create({
   icon: {

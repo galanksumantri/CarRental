@@ -2,7 +2,7 @@ import {useIsFocused} from '@react-navigation/native';
 import React from 'react';
 import {ScrollView, StatusBar, StyleSheet, View} from 'react-native';
 import {JSONCarList, Mercedes} from '../../assets';
-import {List, Header} from '../../components';
+import {List, HeaderTitle} from '../../components';
 import {colors} from '../../utils';
 
 export default function DaftarMobil() {
@@ -12,7 +12,7 @@ export default function DaftarMobil() {
         barStyle="dark-content"
         backgroundColor={useIsFocused() ? colors.white : null} />
       <ScrollView showsVerticalScrollIndicator={false}>
-        <Header title="Daftar Mobil" />
+        <HeaderTitle title="Daftar Mobil" />
         <View style={styles.bodyWrapper}>
           {JSONCarList.data.map(item => {
             return (

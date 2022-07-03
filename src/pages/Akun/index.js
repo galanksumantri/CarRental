@@ -2,7 +2,7 @@ import {useIsFocused} from '@react-navigation/native';
 import React from 'react';
 import { Dimensions, Image, StatusBar, StyleSheet, Text, View } from 'react-native';
 import {BgAkun} from '../../assets';
-import {Button, Header} from '../../components';
+import {Button, HeaderTitle} from '../../components';
 import {colors, fonts} from '../../utils';
 
 export default function Akun () {
@@ -11,7 +11,7 @@ export default function Akun () {
       <StatusBar
         barStyle="dark-content"
         backgroundColor={useIsFocused() ? colors.white : null} />
-      <Header title="Akun" />
+      <HeaderTitle title="Akun" />
       <View style={styles.card}>
         <Image source={BgAkun} style={styles.image} />
         <Text style={styles.textTitle}>

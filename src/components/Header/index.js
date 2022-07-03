@@ -1,3 +1,4 @@
-import Header from "./HeaderTitle";
+import HeaderHome from "./HeaderHome";
+import HeaderTitle from './HeaderTitle';
 
-export {Header}
+export {HeaderHome, HeaderTitle}
