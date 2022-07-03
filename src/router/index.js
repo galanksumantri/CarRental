@@ -1,4 +1,3 @@
-import { StyleSheet, Text, View } from 'react-native';
 import React from 'react';
 import { createNativeStackNavigator } from '@react-navigation/native-stack';
 import { createBottomTabNavigator } from '@react-navigation/bottom-tabs';
@@ -9,7 +8,7 @@ import { BottomNavigator } from '../components/';
 const Stack = createNativeStackNavigator()
 const Tab = createBottomTabNavigator();
 
-export default function MainApp() {
+function MainApp () {
   return (
     <Tab.Navigator
       tabBar={props => <BottomNavigator {...props} />}
@@ -54,7 +53,7 @@ export default function MainApp() {
   )
 }
 
-const Router = () => {
+export default function Router() {
   return (
     <Stack.Navigator initialRouteName='Splash'>
         <Stack.Screen name='Splash' component={Splash} options={{ headerShown: false }} />
