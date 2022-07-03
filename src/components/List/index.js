@@ -2,12 +2,13 @@ import React from 'react';
 import {Image, StyleSheet, Text, TouchableOpacity, View} from 'react-native';
 import {IcBriefCase, IcUsers} from '../../assets';
 import {colors, fonts} from '../../utils';
+import { Car } from '../../assets';
 
-export default function List({name, harga, user, briefCase, source}) {
+export default function List({name, harga, user, briefCase}) {
   return (
     <TouchableOpacity style={styles.container}>
       <View style={styles.wrapper}>
-        <Image source={source} style={styles.image} />
+        <Image source={Car} style={styles.image} />
         <View>
           <Text style={styles.mobil}>{name}</Text>
           <View style={styles.icon}>
