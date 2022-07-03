@@ -45,7 +45,6 @@ const styles = StyleSheet.create({
     alignItems: 'center',
     justifyContent: 'flex-start',
   },
-
   harga: {
     fontFamily: fonts.primary[400],
     color: colors.text.secondary,
@@ -56,7 +55,6 @@ const styles = StyleSheet.create({
     marginVertical: 8,
     marginRight: 16,
   },
-
   text: {
     marginRight: 16,
     fontSize: 13,

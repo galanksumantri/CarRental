@@ -2,7 +2,7 @@ import {useIsFocused} from '@react-navigation/native';
 import React from 'react';
 import { Dimensions, Image, StatusBar, StyleSheet, Text, View } from 'react-native';
 import {BgAkun} from '../../assets';
-import {Button} from '../../components';
+import {Button, Header} from '../../components';
 import {colors, fonts} from '../../utils';
 
 export default function Akun () {
@@ -11,9 +11,7 @@ export default function Akun () {
       <StatusBar
         barStyle="dark-content"
         backgroundColor={useIsFocused() ? colors.white : null} />
-      <View style={styles.titleWrapper}>
-        <Text style={styles.titleLayanan}>Akun</Text>
-      </View>
+      <Header title="Akun" />
       <View style={styles.card}>
         <Image source={BgAkun} style={styles.image} />
         <Text style={styles.textTitle}>
@@ -33,15 +31,6 @@ const styles = StyleSheet.create({
   page: {
     backgroundColor: colors.white,
     flex: 1,
-  },
-  titleWrapper: {
-    marginVertical: 18,
-    marginHorizontal: 16,
-  },
-  titleLayanan: {
-    fontSize: 14,
-    color: colors.text.primary,
-    fontFamily: fonts.primary[700],
   },
   card: {
     marginHorizontal: 24,
