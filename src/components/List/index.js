@@ -28,7 +28,8 @@ const styles = StyleSheet.create({
     padding: 16,
     borderRadius: 4,
     backgroundColor: colors.white,
-    elevation: 5,
+    borderWidth: 2,
+    borderColor: colors.border,
     marginBottom: 16,
   },
   wrapper: {

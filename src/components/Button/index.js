@@ -2,10 +2,10 @@ import React from 'react';
 import { Dimensions, StyleSheet, Text, TouchableOpacity, View} from 'react-native';
 import {colors} from '../../utils';
 
-export default function Button({title}) {
+export default function Button({title, style}) {
   return (
     <TouchableOpacity>
-      <View style={styles.buttonWrapper}>
+      <View style={[styles.buttonWrapper, style]}>
         <Text style={styles.textButton}>{title}</Text>
       </View>
     </TouchableOpacity>

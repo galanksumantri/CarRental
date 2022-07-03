@@ -1,9 +1,9 @@
 import { ScrollView, View, Text, StyleSheet, Image, ImageBackground, StatusBar } from 'react-native'
 import React from 'react'
 import {useIsFocused} from '@react-navigation/native';
-import { Logo2, JSONCarList, JSONCategoryList, } from '../../assets'
-import {ButtonIcon, List} from '../../components'
-import { colors } from '../../utils';
+import { Profile, Logo2, JSONCarList, JSONCategoryList, } from '../../assets'
+import {ButtonIcon, List, Button} from '../../components'
+import { colors, fonts } from '../../utils';
 
 export default function Home() {
   return (
@@ -13,17 +13,17 @@ export default function Home() {
         backgroundColor={useIsFocused() ? colors.background2 : null} />
       <View style={styles.profileWrapper}>
         <View style={styles.bungkus}>
-          <Text style={styles.text1}>Hi, Galang</Text>
-          <Text style={styles.text2}>Your Location</Text>
+          <Text style={styles.text1}>Hi, Galang Sumantri</Text>
+          <Text style={styles.text2}>Kulon Progo, DI Yogyakarta</Text>
         </View>
-        <Image source={Logo2} style={styles.imageProfile}></Image>
+        <Image source={Profile} style={styles.imageProfile}></Image>
       </View>
       <View style={styles.container}>
         <View style={styles.card}>
           <ImageBackground resizeMode='cover' source={Logo2} style={styles.logo}> 
-              <Text style={styles.text3}>Sewa Mobil Berkualitas</Text>
-              <Text style={styles.text4}>di kawasanmu</Text>
-              <Text style={styles.text5}>Sewa Mobil</Text>
+            <Text style={styles.text3}>Sewa Mobil Berkualitas</Text>
+            <Text style={styles.text3}>di kawasanmu</Text>
+            <Button title="Sewa Mobil" style={{width: 109, height: 28, marginLeft: '5%', marginTop: 16}} />
           </ImageBackground>
         </View>
       </View>
@@ -69,15 +69,16 @@ const styles = StyleSheet.create({
   },
   text1 : {
     color: '#000',
-    fontFamily: 'Helvetica',
+    fontFamily: fonts.primary[300],
+    fontWeight: '300',
     paddingLeft: 16,
     paddingTop: 16,  
   },
   text2 : {
     color: '#000',
-    fontFamily: 'Helvetica',
+    fontFamily: fonts.primary[700],
     paddingLeft: "5%",
-    fontWeight: 'bold',
+    fontWeight: '700',
     fontSize: 16,
   },
   imageProfile: {
@@ -104,11 +105,11 @@ const styles = StyleSheet.create({
     marginVertical: 74,
   },
   card: {
-    width: '90%',
-    height: '45%',
+    width: '100%',
+    height: '100%',
     backgroundColor: 'green',
     flexDirection: 'row',
-    borderRadius: 20,
+    borderRadius: 8,
     overflow: 'hidden',
   },
   logo: {
@@ -117,25 +118,11 @@ const styles = StyleSheet.create({
     justifyContent: 'center',
   },
   text3 : {
-    fontFamily: 'Helvetica',
+    fontFamily: fonts.primary[400],
     paddingLeft: "5%",
-    fontWeight: 'bold',
+    fontWeight: '400',
     fontSize: 16,
     color: 'white',
-  },
-  text4 : {
-    fontFamily: 'Helvetica',
-    paddingLeft: "5%",
-    fontWeight: 'bold',
-    fontSize: 16,
-    color: 'white',
-  },
-  text5 : {
-    color: '#fff',
-    fontFamily: 'Helvetica',
-    paddingLeft: "5%",
-    fontWeight: 'bold',
-    fontSize: 16,
   },
   body: {
     marginHorizontal: 16,
