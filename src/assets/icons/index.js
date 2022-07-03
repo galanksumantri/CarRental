@@ -8,5 +8,7 @@ import IcOlehOleh from './IcOlehOleh.svg'
 import IcPenginapan from './IcPenginapan.svg'
 import IcSewaMobil from './IcSewaMobil.svg'
 import IcWisata from './IcWisata.svg'
+import IcBriefCase from './briefCase.svg'
+import IcUsers from './users.svg'
 
-export { IconHome, IconHomeActive, IconList, IconListActive, IconUser, IconUserActive, IcOlehOleh, IcPenginapan, IcSewaMobil, IcWisata }
+export { IconHome, IconHomeActive, IconList, IconListActive, IconUser, IconUserActive, IcOlehOleh, IcPenginapan, IcSewaMobil, IcWisata, IcBriefCase, IcUsers }
