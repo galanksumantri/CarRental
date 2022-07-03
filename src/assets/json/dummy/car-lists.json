@@ -34,6 +34,41 @@
       "user": 4,
       "name": "Daihatsu Xenia",
       "harga": "Rp 230.000"
+    },
+    {
+      "id": 6,
+      "briefCase": 2,
+      "user": 4,
+      "name": "Daihatsu Xenia",
+      "harga": "Rp 230.000"
+    },
+    {
+      "id": 7,
+      "briefCase": 2,
+      "user": 4,
+      "name": "Daihatsu Xenia",
+      "harga": "Rp 230.000"
+    },
+    {
+      "id": 8,
+      "briefCase": 2,
+      "user": 4,
+      "name": "Daihatsu Xenia",
+      "harga": "Rp 230.000"
+    },
+    {
+      "id": 9,
+      "briefCase": 2,
+      "user": 4,
+      "name": "Daihatsu Xenia",
+      "harga": "Rp 230.000"
+    },
+    {
+      "id": 10,
+      "briefCase": 2,
+      "user": 4,
+      "name": "Daihatsu Xenia",
+      "harga": "Rp 230.000"
     }
   ]
 }

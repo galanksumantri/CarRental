@@ -3,7 +3,7 @@ import {Image, StyleSheet, Text, TouchableOpacity, View} from 'react-native';
 import {IcBriefCase, IcUsers} from '../../assets';
 import {colors, fonts} from '../../utils';
 
-const List = ({name, harga, user, briefCase, source}) => {
+export default function List({name, harga, user, briefCase, source}) {
   return (
     <TouchableOpacity style={styles.container}>
       <View style={styles.wrapper}>
@@ -22,8 +22,6 @@ const List = ({name, harga, user, briefCase, source}) => {
     </TouchableOpacity>
   );
 };
-
-export default List;
 
 const styles = StyleSheet.create({
   container: {

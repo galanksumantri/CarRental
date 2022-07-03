@@ -1,23 +1,21 @@
 import {useIsFocused} from '@react-navigation/native';
 import React from 'react';
 import { Dimensions, Image, StatusBar, StyleSheet, Text, View } from 'react-native';
-import {Logo} from '../../assets';
+import {BgAkun} from '../../assets';
 import {Button} from '../../components';
 import {colors, fonts} from '../../utils';
 
-function Akun () {
+export default function Akun () {
   return (
     <View style={styles.page}>
       <StatusBar
         barStyle="dark-content"
-        backgroundColor={useIsFocused() ? colors.white : null}
-      />
-
+        backgroundColor={useIsFocused() ? colors.white : null} />
       <View style={styles.titleWrapper}>
         <Text style={styles.titleLayanan}>Akun</Text>
       </View>
       <View style={styles.card}>
-        <Image source={Logo} style={styles.image} />
+        <Image source={BgAkun} style={styles.image} />
         <Text style={styles.textTitle}>
           Upss kamu belum memiliki akun. Mulai buat akun agar transaksi di BCR
           lebih mudah
@@ -28,10 +26,9 @@ function Akun () {
   );
 };
 
-export default Akun;
-
 const windowWidth = Dimensions.get('window').width;
 const windowHeight = Dimensions.get('window').height;
+
 const styles = StyleSheet.create({
   page: {
     backgroundColor: colors.white,
@@ -46,7 +43,6 @@ const styles = StyleSheet.create({
     color: colors.text.primary,
     fontFamily: fonts.primary[700],
   },
-
   card: {
     marginHorizontal: 24,
     alignItems: 'center',

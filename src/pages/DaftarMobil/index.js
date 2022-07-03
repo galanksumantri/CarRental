@@ -5,13 +5,12 @@ import {JSONCarList, Mercedes} from '../../assets';
 import {List} from '../../components';
 import {colors, fonts} from '../../utils';
 
-const DaftarMobil = () => {
+export default function DaftarMobil() {
   return (
     <View style={styles.page}>
       <StatusBar
         barStyle="dark-content"
-        backgroundColor={useIsFocused() ? colors.white : null}
-      />
+        backgroundColor={useIsFocused() ? colors.white : null} />
       <ScrollView showsVerticalScrollIndicator={false}>
         <View style={styles.titleWrapper}>
           <Text style={styles.textTitle}>Daftar Mobil</Text>
@@ -36,25 +35,20 @@ const DaftarMobil = () => {
   );
 };
 
-export default DaftarMobil;
-
 const styles = StyleSheet.create({
   page: {
     backgroundColor: colors.white,
     flex: 1,
   },
-
   titleWrapper: {
     marginVertical: 18,
     marginHorizontal: 16,
   },
-
   textTitle: {
     fontSize: 14,
     color: colors.text.primary,
     fontFamily: fonts.primary[700],
   },
-
   bodyWrapper: {
     marginHorizontal: 16,
     marginTop: 8,

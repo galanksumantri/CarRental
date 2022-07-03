@@ -1,14 +1,8 @@
 import React from 'react';
-import {
-  Dimensions,
-  StyleSheet,
-  Text,
-  TouchableOpacity,
-  View,
-} from 'react-native';
+import { Dimensions, StyleSheet, Text, TouchableOpacity, View} from 'react-native';
 import {colors} from '../../utils';
 
-const Button = ({title}) => {
+export default function Button({title}) {
   return (
     <TouchableOpacity>
       <View style={styles.buttonWrapper}>
@@ -17,8 +11,6 @@ const Button = ({title}) => {
     </TouchableOpacity>
   );
 };
-
-export default Button;
 
 const windowWidth = Dimensions.get('window').width;
 const windowHeight = Dimensions.get('window').height;
