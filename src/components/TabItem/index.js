@@ -1,33 +1,23 @@
 import React from 'react';
 import {StyleSheet, Text, TouchableOpacity} from 'react-native';
-import {
-  IcHome,
-  IcHomeActive,
-  IcList,
-  IcListActive,
-  IcUser,
-  IcUserActive,
-} from '../../assets';
+import { IconHome, IconHomeActive, IconList, IconListActive, IconUser, IconUserActive } from '../../assets';
 import {colors, fonts} from '../../utils';
-
-const TabItem = ({isFocused, onPress, label}) => {
+ 
+export default function TabItem({isFocused, onPress, label}) {
   const Icon = () => {
-    if (label === 'Home') return isFocused ? <IcHomeActive /> : <IcHome />;
+    if (label === 'Home') return isFocused ? <IconHomeActive /> : <IconHome />;
     if (label === 'Daftar Mobil')
-      return isFocused ? <IcListActive /> : <IcList />;
-    if (label === 'Akun') return isFocused ? <IcUserActive /> : <IcUser />;
-
-    return <IcHomeActive />;
+      return isFocused ? <IconListActive /> : <IconList />;
+    if (label === 'Akun') return isFocused ? <IconUserActive /> : <IconUser />;
+    return <IconHomeActive />;
   };
   return (
     <TouchableOpacity onPress={onPress} style={styles.container}>
-      {/* <Icon /> */}
+      <Icon />
       <Text style={styles.text(isFocused)}>{label}</Text>
     </TouchableOpacity>
   );
 };
-
-export default TabItem;
 
 const styles = StyleSheet.create({
   container: {

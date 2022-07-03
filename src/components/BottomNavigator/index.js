@@ -1,8 +1,9 @@
-import { StyleSheet, Text, View, TouchableOpacity } from 'react-native'
+import { StyleSheet, View } from 'react-native'
 import React from 'react'
 import TabItem from '../TabItem';
+import { colors } from '../../utils';
 
-function BottomNavigator({ state, descriptors, navigation }) {
+export default function BottomNavigator({ state, descriptors, navigation }) {
     return (
       <View style={ styles.container }>
         {state.routes.map((route, index) => {
@@ -24,16 +25,8 @@ function BottomNavigator({ state, descriptors, navigation }) {
             });
   
             if (!isFocused && !event.defaultPrevented) {
-              // The `merge: true` option makes sure that the params inside the tab screen are preserved
               navigation.navigate({ name: route.name, merge: true });
             }
-          };
-  
-          const onLongPress = () => {
-            navigation.emit({
-              type: 'tabLongPress',
-              target: route.key,
-            });
           };
   
           return (
@@ -42,7 +35,6 @@ function BottomNavigator({ state, descriptors, navigation }) {
                 label={label}
                 isFocused={isFocused}
                 onPress={onPress}
-                onLongPress={onLongPress}
             />
           );
         })}
@@ -50,15 +42,14 @@ function BottomNavigator({ state, descriptors, navigation }) {
     );
   }
 
-export default BottomNavigator
-
 const styles = StyleSheet.create({
     container: {
         flexDirection: 'row',
-        backgroundColor: '#fff',
-        // justifyContent: 'space-between',
-        // paddingHorizontal: 16,
-        // paddingBottom: 20,
-        // paddingVertical: 20
+        backgroundColor: colors.white,
+        justifyContent: 'space-around',
+        paddingHorizontal: 8,
+        paddingVertical: 11,
+        borderTopWidth: 1,
+        borderColor: colors.border,
     }
 })
